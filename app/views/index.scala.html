@@ -1,5 +1,40 @@
-@(message: String)
+@main("votes") {
+<div class="jumbotron">
+  <h1>Witamy na Hackatonie</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#systemInformationModal">Dowiedz się więcej</a></p>
+</div>
 
-@main("Welcome to Play") {
-    <h1>Hello PKW!</h1>
+
+<div data-bind='visible: provincesBeingLoaded'>
+  Wczytywanie ...
+</div>
+<div data-bind='hidden: provincesBeingLoaded'>
+  <form role="form" class="form-horizontal">
+    <div class="form-group col-md-8">
+      <label class="col-sm-2 control-label" for="province">Województwo: </label>
+      <div class="col-sm-10">
+        <select id="province" class="form-control" data-bind='options: provinces, optionsText: "name", optionsCaption: "Wybierz...", value: province'> </select>
+      </div>
+    </div>
+  </form>
+</div>
+          </div>
+
+          <!-- Modal -->
+<div class="modal fade" id="systemInformationModal" tabindex="-1" role="dialog" aria-labelledby="systemInformationLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4 class="modal-title" id="systemInformationLabel">Informacje o systemie</h4>
+    </div>
+    <div class="modal-body">
+      Informacje
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+    </div>
+  </div>
+</div>
 }
