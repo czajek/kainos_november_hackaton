@@ -3,7 +3,7 @@ package assets;
 import java.util.List;
 
 /*
- * Okrag
+ * Okręg
  */
 public class Circumference {
 	public int number;
