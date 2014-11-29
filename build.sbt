@@ -13,6 +13,7 @@ libraryDependencies ++= Seq(
   "org.mongodb" % "mongo-java-driver" % "2.12.4",
   "org.json" % "json" % "20140107",
   "com.google.guava" % "guava" % "18.0",
+  "com.sun.xml.bind" % "jaxb-impl" % "2.2.11",
   javaJdbc,
   javaEbean,
   cache,
