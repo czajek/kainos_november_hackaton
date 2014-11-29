@@ -1,0 +1,134 @@
+{  
+   "gmina":{  
+      "wojewodztwo":"Pomorskie",
+      "okrag_wyborczy":{  
+         "uid":"01938914983214981",
+         "nr":1,
+         "komisja":{  
+            "czlonek":[  
+               {  
+                  "uid":"09123123",
+                  "imie":"Alicja",
+                  "nazwisko":"Bogucka",
+                  "rola":"przewodniczacy"
+               },
+               {  
+                  "uid":12323123,
+                  "imie":"Kinga",
+                  "nazwisko":"Wojnowicz Aleksandra",
+                  "rola":"czlonek"
+               },
+               {  
+                  "uid":87687643,
+                  "imie":"Kazimiera",
+                  "nazwisko":"Dybikowska",
+                  "rola":"czlonek"
+               }
+            ]
+         },
+         "obwod_wyborczy":{  
+            "uid":123123323,
+            "adres":{  
+               "numer_budynku":3,
+               "tel":583435800,
+               "numer_lokalu":"",
+               "ulica":"Wczasy",
+               "nazwa_lokalu":"Szkoła Podstawowa NR 20"
+            },
+            "komisja":{  
+               "czlonek":[  
+                  {  
+                     "uid":"09123123",
+                     "imie":"Alicja",
+                     "nazwisko":"Bogucka",
+                     "rola":"przewodniczacy"
+                  },
+                  {  
+                     "uid":12323123,
+                     "imie":"Kinga",
+                     "nazwisko":"Wojnowicz Aleksandra",
+                     "rola":"czlonek"
+                  },
+                  {  
+                     "uid":87687643,
+                     "imie":"Kazimiera",
+                     "nazwisko":"Dybikowska",
+                     "rola":"czlonek"
+                  }
+               ]
+            },
+            "nazwa":"Brzeźno",
+            "karta":[  
+               {  
+                  "lista":[  
+                     {  
+                        "kandydat":[  
+                           {  
+                              "content":1,
+                              "imie":"Marzena",
+                              "nazwisko":"Grabowska"
+                           },
+                           {  
+                              "imie":"Jarosław",
+                              "nazwisko":"Dariusz Piotr"
+                           }
+                        ],
+                        "nr":8,
+                        "nazwa":"KW Liga Polskich Rodzin"
+                     },
+                     {  
+                        "kandydat":{  
+                           "content":1,
+                           "imie":"Robert Wojciech",
+                           "nazwisko":"Pasik"
+                        },
+                        "nr":9,
+                        "nazwa":"KW Twój Ruch"
+                     }
+                  ],
+                  "rodzaj":"Rada Miasta"
+               },
+               {  
+                  "nazwa":"KW Liga Polskich Rodzin",
+                  "lista":[  
+                     {  
+                        "kandydat":{  
+                           "imie":"Marzena",
+                           "nazwisko":"Grabowska"
+                        },
+                        "nr":1,
+                        "nazwa":"KW Liga Polskich Rodzin"
+                     },
+                     {  
+                        "kandydat":{  
+                           "content":1,
+                           "imie":"Izabela",
+                           "nazwisko":"Kalkowska"
+                        },
+                        "nr":2,
+                        "nazwa":"Prawo i Sprawiedliwość"
+                     }
+                  ],
+                  "rodzaj":"Prezydent Miasta"
+               },
+               {  
+                  "nazwa":"KW Liga Polskich Rodzin",
+                  "lista":{  
+                     "kandydat":{  
+                        "imie":"XXX",
+                        "nazwisko":"XXX"
+                     },
+                     "nr":8
+                  },
+                  "rodzaj":"Sejmik Wojewórzki"
+               }
+            ],
+            "ilosc_kart_wyborczych":53000,
+            "ilosc_uprawnionych_do_glosowania":53482
+         },
+         "opis":"Brzeźno, Nowy Port, Letnica, Przeróbka, Stogi, Krakowiec-Górki Zachodnie, Wyspa Sobieszewska, Rudniki, Olszynka, Orunia-Św. Wojciech-Lipce"
+      },
+      "stolica":"Gdańsk",
+      "nazwa":"Gdańsk"
+   }
+}
