@@ -1,16 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import models.dto.Candidate;
+import models.dto.Circumference;
+import models.dto.Community;
+import models.dto.Perimeter;
+import models.dto.SelectionList;
+
 import org.junit.Test;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
 import play.libs.Json;
-import assets.Candidate;
-import assets.Circumference;
-import assets.Community;
-import assets.Perimeter;
-import assets.SelectionList;
 
 
 public class Mock {
