@@ -1,4 +1,4 @@
-package assets;
+package models.dto;
 
 import java.util.List;
 
