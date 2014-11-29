@@ -5,9 +5,15 @@ define('votingViewModel', [
 	var VotingViewModel = function() {
 		var vm = this;
 		vm.provincesBeingLoaded = ko.observable(true);
+		vm.listTypesBeingLoaded = ko.observable(true);
 
 		vm.province = ko.observable();
 		vm.province.subscribe(function(newValue) {
+			console.log(newValue);
+		});
+		
+		vm.listType = ko.observable();
+		vm.listType.subscribe(function(newValue) {
 			console.log(newValue);
 		});
 		
@@ -17,6 +23,15 @@ define('votingViewModel', [
 			loader.getProvinces(function(data) {
 				vm.provinces(data);
 				vm.provincesBeingLoaded(false);
+			});
+		};
+		
+		vm.listTypes = ko.observableArray();
+		this.loadListTypes = function() {
+			vm.listTypesBeingLoaded(true);
+			loader.getListTypes(function(data) {
+				vm.listTypes(data);
+				vm.listTypesBeingLoaded(false);
 			});
 		};
 	};

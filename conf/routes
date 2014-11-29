@@ -3,9 +3,13 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
-GET     /provinces                  controllers.Province.index()
-GET     /results                    controllers.Application.results()
+GET     /results/circumference/:number  controllers.Results.circumference(number: Int)
+GET     /                           	controllers.Application.index()
+GET     /provinces                  	controllers.Province.index()
+GET     /results                    	controllers.Application.results()
+GET     /list-types                 	controllers.ListTypes.getListTypes()
+GET     /xml			    	controllers.XmlTransformation.index()
+POST	/xml			    	controllers.XmlTransformation.process()
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /assets/*file                        controllers.Assets.at(path="/public", file)

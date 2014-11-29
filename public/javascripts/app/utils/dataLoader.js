@@ -13,7 +13,12 @@ define('dataLoader', [
 	   getProvinces: function(callback) {
 		   return strategy(function() {
 			   return $.getJSON(config.provincesUri); 	   	
-		   }, config.provinces, callback);
+		   }, config.provinces, callback, true);
+	   },
+	   getListTypes: function(callback) {
+		   return strategy(function() {
+			   return $.getJSON(config.listTypesUri)
+		   }, config.listTypes, callback);
 	   },
 	   getConstituencies: function(provinceName, callback) {
 		   return strategy(function(provinceName) {
