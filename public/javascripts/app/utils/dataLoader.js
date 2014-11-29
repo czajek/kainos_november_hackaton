@@ -15,6 +15,11 @@ define('dataLoader', [
 			   return $.getJSON(config.provincesUri); 	   	
 		   }, config.provinces, callback);
 	   },
+	   getListTypes: function(callback) {
+		   return strategy(function() {
+			   return $.getJSON(config.listTypesUri)
+		   }, config.listTypes, callback);
+	   },
 	   getConstituencies: function(provinceName, callback) {
 		   return strategy(function(provinceName) {
 			   $.getJSON(config.provincesUri + '/' + provinceName);	   	
