@@ -3,12 +3,12 @@ define('dataLoader', [
 	'dataConfig',
 	'dataMocks'
 ], function($, config, mocks) { 
-   var mocked = true,
-	   strategy = function(loader, key, callback) {
-			return mocked ? 
-				callback(mocks.processMock(key)) :
-				loader().done(function(data) { callback(data) });
-	   };
+   var strategy = function(loader, key, callback, mocked) {
+   	    mocked = mocked || false;
+		return mocked ? 
+			callback(mocks.processMock(key)) :
+			loader().done(function(data) { callback(data) });
+   };
    return {
 	   getProvinces: function(callback) {
 		   return strategy(function() {
@@ -17,18 +17,18 @@ define('dataLoader', [
 	   },
 	   getConstituencies: function(provinceName, callback) {
 		   return strategy(function(provinceName) {
-			   $.getJSON(config.constituenciesUri + '/' + provinceName);	   	
+			   $.getJSON(config.provincesUri + '/' + provinceName);	   	
 		   }, $.extend(config.constituencies, { 
 				'province': provinceName 
-		   }), callback);
+		   }), callback, true);
 	   },
 	   getCandidates: function(provinceName, constituencyName, callback) {
 		   return strategy(function(provinceName, constituencyName) {
-			   $.getJSON(config.candidatesUri + '/' + provinceName + '/' + constituencyName);
+			   $.getJSON(config.provincesUri + '/' + provinceName + '/' + constituencyName);
 		   }, $.extend(config.candidates, { 
 				'province': provinceName,
 				'constituency': constituencyName
-		   }), callback);
+		   }), callback, true);
 	   } 
    };
 });

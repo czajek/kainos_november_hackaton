@@ -9,7 +9,7 @@
 <div data-bind='visible: provincesBeingLoaded'>
   Wczytywanie ...
 </div>
-<div data-bind='hidden: provincesBeingLoaded'>
+<div data-bind='visible: !provincesBeingLoaded()'>
   <form role="form" class="form-horizontal">
     <div class="form-group col-md-8">
       <label class="col-sm-2 control-label" for="province">Województwo: </label>

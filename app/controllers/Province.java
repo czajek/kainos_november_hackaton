@@ -8,6 +8,7 @@ import views.html.*;
 public class Province extends Controller {
 
     public static Result index() {
-        return ok("OK");
+    	// TODO: implement properly
+        return ok("[{ \"name\": \"Pomorskie\" }, { \"name\": \"Wielkopolskie\" }]");
     }
 }
