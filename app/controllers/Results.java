@@ -2,10 +2,9 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
+import views.html.results.*;
 
-import views.html.*;
-
-public class Application extends Controller {
+public class Results extends Controller {
 
     public static Result index() {
         return ok(index.render());
