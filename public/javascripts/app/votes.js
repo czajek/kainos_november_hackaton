@@ -7,5 +7,6 @@ require(['./utils/requireConfig'], function() {
 		var vm = new votingViewModel();
 		ko.applyBindings(vm);
 		vm.loadProvinces();
+		vm.loadListTypes();
 	});
 });
