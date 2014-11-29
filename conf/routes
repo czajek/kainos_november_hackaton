@@ -6,7 +6,7 @@
 GET     /results/circumference/:number  controllers.Results.circumference(number: Int)
 GET     /                           	controllers.Application.index()
 GET     /provinces                  	controllers.Province.index()
-GET     /results                    	controllers.Application.results()
+GET     /results                    	controllers.Results.index()
 GET     /list-types                 	controllers.ListTypes.getListTypes()
 GET     /xml			    	controllers.XmlTransformation.index()
 POST	/xml			    	controllers.XmlTransformation.process()
